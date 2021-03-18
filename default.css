@@ -1,0 +1,221 @@
+<style type="text/css">
+#cookiePopin {
+position: fixed;
+bottom: 0;
+right: 20px;
+width: 280px;
+background-color: #000;
+border-radius: 10px 10px 0 0;
+overflow: hidden;
+display: none;
+z-index: 9999;
+}
+#cookieTitle {
+line-height: 26px;
+color: #fff;
+font-size: 16px;
+}
+#cookieClose {
+width: 26px;
+height: 26px;
+color: #fff;
+font-size: 16px;
+text-align: center;
+cursor: pointer;
+}
+#cookieDescription {
+line-height: 20px;
+color: #fff;
+font-size: 13px;
+}
+#cookieDescription a {
+color: #428bca;
+}
+</style>
+<script type="text/javascript">
+CookieBar.titleDom = '#cookieTitle';
+CookieBar.bodyDom = '#cookieDescription';
+CookieBar.load(function (r) {
+$('#cookiePopin').fadeIn();
+setTimeout(function () {
+$('#cookiePopin').fadeOut();
+}, 10000);
+$('#cookieClose').on('click', function () {
+$('#cookiePopin').fadeOut();
+});
+});
+</script>
+<div id="mainWrapper" class="fl"><script type="text/javascript">
+    $(document).ready(function () {
+        var leftCol = true;
+        var rightCol = true;
+        var leftContent = $('#leftColumn').html().trim();
+        var rightContent = $('#rightColumn').html().trim();
+        var contentWrap = $('.contentWrapper');
+        var content = $('#mainColumn');
+        if (leftContent == '') {
+            leftCol = false;
+            $('#leftColumn').remove();
+        }
+        if (rightContent == '') {
+            rightCol = false;
+            $('#rightColumn').remove();
+        }
+        if (leftCol && rightCol) {
+            contentWrap.attr('id', 'threeCol');
+            content.addClass('col-8 col-md-6 col-sm-12');
+        }
+        else if (leftCol || rightCol) {
+            contentWrap.attr('id', 'twoCol');
+            content.addClass('col-10 col-md-9 col-sm-12');
+        }
+        else {
+            contentWrap.attr('id', 'oneCol');
+            content.addClass('col-12');
+        }
+    });
+</script>
+<div id="skeletonWrap" class="fl">
+    <div id="skeleton" class="fl col-12">
+        <header class="col col-12">
+            <div id="header" class="row">
+                <!--cache-->
+<style>
+.marquee {
+width: 100%;
+overflow: hidden;
+white-space: nowrap;
+position:fixed;
+top:0;
+}
+.marquee:hover .marquee__item {
+-webkit-animation-play-state: paused;
+animation-play-state: paused;
+}
+.marquee__seperator {
+margin: 0 4rem;
+}
+.marquee__item {
+display: inline-block;
+-webkit-animation: marquee 10s linear infinite;
+animation: marquee 10s linear infinite;
+}
+@-webkit-keyframes marquee {
+0% {
+-webkit-transform: translateX(0);
+transform: translateX(0);
+}
+100% {
+-webkit-transform: translateX(-100%);
+transform: translateX(-100%);
+}
+}
+@keyframes marquee {
+0% {
+-webkit-transform: translateX(0);
+transform: translateX(0);
+}
+100% {
+-webkit-transform: translateX(-100%);
+transform: translateX(-100%);
+}
+}
+.marquee {
+background-color: #fff;
+padding: 0.5rem 0;
+color: black;
+z-index: 9999;
+}
+.tek{
+color:#DF508E;
+}
+</style>
+<a href="/modaselvim-yeni-urunler" dir="ltr">
+<div class="marquee">
+<div class="marquee__item">
+<span class="tek">
+YURT İÇİNDE KAPIDA ÖDEME & HIZLI KARGO
+</span>
+<span class="marquee__seperator"></span>
+<span class="çift">
+150 TL VE ÜZERİ ALIŞVERİŞLERİNİZDE <b>KARGO BEDAVA!</b>
+</span>
+<span class="marquee__seperator"></span>
+<span class="tek">
+ÜÇ AYLARA ÖZEL <B> NET %15 İNDİRİM </B>&#128525;
+</span>
+<span class="marquee__seperator"></span>
+</div>
+<div class="marquee__item">
+<span class="cift">
+TÜM DÜNYAYA KARGO İMKANI
+</span>
+<span class="marquee__seperator"></span>
+<span class="tek">
+150 TL VE ÜZERİ ALIŞVERİŞLERİNİZDE <b>KARGO BEDAVA!</b>
+</span>
+<span class="marquee__seperator"></span>
+<span class="cift">
+ÜÇ AYLARA ÖZEL <B> NET %15 İNDİRİM </B>&#128525;
+</span>
+<span class="marquee__seperator"></span>
+</div>
+<div class="marquee__item">
+<span class="tek">
+YURT İÇİNDE KAPIDA ÖDEME & HIZLI KARGO
+</span>
+<span class="marquee__seperator"></span>
+<span class="çift">
+150 TL VE ÜZERİ ALIŞVERİŞLERİNİZDE <b>KARGO BEDAVA!</b>
+</span>
+<span class="marquee__seperator"></span>
+<span class="tek">
+ÜÇ AYLARA ÖZEL <B> NET %15 İNDİRİM </B>&#128525;
+</span>
+<span class="marquee__seperator"></span>
+</div>
+<div class="marquee__item">
+<span class="cift">
+YURT İÇİNDE KAPIDA ÖDEME & HIZLI KARGO
+</span>
+<span class="marquee__seperator"></span>
+<span class="tek">
+150 TL VE ÜZERİ ALIŞVERİŞLERİNİZDE <b>KARGO BEDAVA!</b>
+</span>
+<span class="marquee__seperator"></span>
+<span class="cift">
+ÜÇ AYLARA ÖZEL <B> NET %15 İNDİRİM </B>&#128525;
+</span>
+<span class="marquee__seperator"></span>
+</div>
+</div></a>
+<style type="text/css">
+#osmTabletdb .tbdn{
+background-color: #da9695;
+font-weight: bold;
+color:white;
+}
+#osmTabletdb td{
+border: 1px solid #ddd;
+height:25px;
+text-align: center;
+line-height:25px;
+}
+#osmTabletdbbaslik {
+height: 30px;
+position: relative;
+border: 1px solid #ddd;
+background-color:#df508e;
+color:white;
+font-weight: bold;
+font-family: sans-serif;
+}
+#osmTabletdbbaslik .baslik{
+margin: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+}
+</style>
